@@ -1,0 +1,13 @@
+.navbar-brand {
+    background-color: teal;
+    color: white;
+}
+
+.navbar-nav {
+    padding-bottom: 50px;
+}
+
+.logos {
+    list-style-type: none;
+    display: inline;
+}
