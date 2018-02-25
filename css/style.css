@@ -1,13 +1,92 @@
-.navbar-brand {
-    background-color: teal;
+body {
+    width: 960px;
+    background-image: url(../assets/background.png);
+}
+
+#navcon {
+    background: #ffffff;
+    height: 50px;
+}
+
+h2 {
+    position: relative;
+    top:-20px;
+    /* not sure why i need this -20 */
+    left: 60px;
+    height:50px;
+    width: 175px;
+    background: #4aaaa5;
     color: white;
+    /* my text still isn't white */
+    text-align: center;
 }
 
 .navbar-nav {
-    padding-bottom: 50px;
+    position: relative;
+    right: 75px;
 }
 
 .logos {
     list-style-type: none;
     display: inline;
+    position: relative;
+    left: 60px;
+}
+
+#about-me {
+    width: 650px;
+    border: 1px solid #dddddd;
+    background: #ffffff;
+}
+
+h1 {
+    padding-left: 10px;
+}
+
+p {
+    padding: 5px;
+}
+
+.wrap {
+    float: left;
+    height: 200px;
+    padding: 5px;
+}
+
+#github, #overflow, #linkedin {
+    float: left;
+    height: 45px;
+    width: 45px;
+}
+
+aside {
+    border: 1px solid #dddddd;
+    width: 270px;
+    float: right;
+    position: relative;
+    right: 200px;
+    bottom:450px;
+    background: #ffffff;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.wrapper {
+    min-height: 100%;
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -50px;
+}
+
+.footer, .push {
+    height: 100px;
+    text-align: center;
+}
+
+.footer {
+    border-top: 8px solid #4aaaa5;
+    background: #666666;
+    color: white;
+    position: relative;
+    bottom:0px;
 }
