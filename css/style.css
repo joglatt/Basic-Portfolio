@@ -1,29 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    width: 960px;
     background-image: url(../assets/background.png);
+}
+
+.container {
+    width: 960px;
+    margin: 0px auto 10px;
 }
 
 #navcon {
     background: #ffffff;
     height: 50px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+#navcon a{
+   position:relative;
+   left:700px; 
+   align-content:center;
 }
 
 h2 {
+    float:left;
     position: relative;
-    top:-20px;
-    /* not sure why i need this -20 */
     left: 60px;
-    height:50px;
+    bottom:20px;
+    height: 50px;
     width: 175px;
     background: #4aaaa5;
     color: white;
-    /* my text still isn't white */
     text-align: center;
 }
 
-.navbar-nav {
-    position: relative;
-    right: 75px;
+.menu {
+    list-style: none;
 }
 
 .logos {
@@ -37,6 +52,7 @@ h2 {
     width: 650px;
     border: 1px solid #dddddd;
     background: #ffffff;
+    float: left;
 }
 
 h1 {
@@ -57,15 +73,14 @@ p {
     float: left;
     height: 45px;
     width: 45px;
+    /*why is overflow icon bigger?*/
 }
 
 aside {
     border: 1px solid #dddddd;
     width: 270px;
-    float: right;
-    position: relative;
-    right: 200px;
-    bottom:450px;
+    float: left;
+    margin-left: 40px;
     background: #ffffff;
     text-align: center;
     padding-bottom: 40px;
@@ -73,8 +88,6 @@ aside {
 
 .wrapper {
     min-height: 100%;
-    /* Equal to height of footer */
-    /* But also accounting for potential margin-bottom of last child */
     margin-bottom: -50px;
 }
 
@@ -87,6 +100,11 @@ aside {
     border-top: 8px solid #4aaaa5;
     background: #666666;
     color: white;
-    position: relative;
-    bottom:0px;
+    clear: both;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
