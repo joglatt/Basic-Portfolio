@@ -76,7 +76,7 @@ h2 {
     margin-top: 100px;
 }
 
-.contact-con, #portfolio-con {
+#contact-con, #portfolio-con {
     padding: 10px;
 }
 
@@ -87,9 +87,10 @@ h2 {
     z-index: 1;
     position: relative;
     left: 25.5px;
+    
 }
 
-h5 {
+.project-link {
     z-index: 2;
     position: relative;
     bottom: 50px;
@@ -109,13 +110,19 @@ h4 {
     margin-bottom: 10px;
 }
 
-h1 {
+h1 , h5{
     font-family: 'Georgia', Times, "Times New Roman", serif;
     padding-left: 15px;
     color: #4aaaa5;
     font-size: 30px;
     padding-top: 15px;
     font-weight: bolder;
+}
+h5{
+    padding-bottom:5px;
+    position:relative;
+    left:10px;
+
 }
 
 h3 {
